@@ -1,15 +1,15 @@
 class IterativeBinarySearch:
 
     @staticmethod
-    def search(arr, target):
+    def search(array, target):
         low = 0
-        high = len(arr) - 1
+        high = len(array) - 1
 
         while low <= high:
             mid = (low + high) // 2
-            if arr[mid] == target:
+            if array[mid] == target:
                 return mid
-            elif arr[mid] < target:
+            elif array[mid] < target:
                 low = mid + 1
             else:
                 high = mid - 1
